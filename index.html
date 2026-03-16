@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Repos Website</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background: #555;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            flex: 1;
+            min-width: 200px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            background: #0077ff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0055cc;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Repository</h1>
+    <p>Collection of all files</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Files</a>
+    <a href="#">Projects</a>
+    <a href="#">Sitemap</a>
+</nav>
+
+<div class="container">
+
+    <h2>Welcome</h2>
+    <p>This is a repo collection for easy navigation.</p>
+
+    <button onclick="showMessage()">View files</button>
+
+    <h2 style="margin-top:30px;">Recent</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Plugin</h3>
+            <p>Click to view.</p>
+        </div>
+
+        <div class="card">
+            <h3>Source</h3>
+            <p>Click to view.</p>
+        </div>
+
+        <div class="card">
+            <h3>Readme</h3>
+            <p>Click to view.</p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Trolltherespawnjeremy</p>
+</footer>
+
+<script>
+function showMessage() {
+    alert("No files here.");
+}
+</script>
+
+</body>
+</html>
